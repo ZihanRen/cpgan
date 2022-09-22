@@ -1,0 +1,8 @@
+matplotlib
+numpy==1.20.3
+openpnm
+scikit-image==0.18.3
+scipy==1.7.1
+porespy
+ipykernel
+openpyxl
