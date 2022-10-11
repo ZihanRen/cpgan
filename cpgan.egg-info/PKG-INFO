@@ -1,14 +1,21 @@
 Metadata-Version: 2.1
 Name: cpgan
 Version: 0.0.1
-Summary: Conditional Generation of Porous media image using CGAN
-Home-page: https://github.com/mike-huls/toolbox
+Summary: Conditional Porous Media Generation
+Home-page: UNKNOWN
 Author: Zihan Ren
-Author-email: zur74@psu.edu
-License: MIT
-Project-URL: Bug Tracker, https://github.com/mike-huls/toolbox/issues
+Author-email: zihanren.ds@gmail.com
+License: UNKNOWN
+Keywords: python,PyTorch,Pore Network Model
 Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
 Description-Content-Type: text/markdown
+
 
 #### Development
 

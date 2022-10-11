@@ -1,0 +1,8 @@
+# ignore all logs
+*.logs
+# ignore all pptx files
+*.pptx
+# ignore all models files
+*.pth
+# ignore all png files
+*.png

@@ -1,19 +1,34 @@
-import setuptools
+from setuptools import setup, find_packages
+import codecs
+import os
 
-with open("README.md", "r", encoding="utf-8") as fh:
-    long_description = fh.read()
+here = os.path.abspath(os.path.dirname(__file__))
 
-setuptools.setup(
-    name='cpgan',
-    version='0.0.1',
-    author='Zihan Ren',
-    author_email='zur74@psu.edu',
-    description='Conditional Generation of Porous media image using CGAN',
-    long_description=long_description,
+with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
+    long_description = "\n" + fh.read()
+
+VERSION = '0.0.1'
+DESCRIPTION = 'Conditional Porous Media Generation'
+LONG_DESCRIPTION = 'A package of using conditional GAN to conditional reconstruct porous media'
+
+# Setting up
+setup(
+    name="cpgan",
+    version=VERSION,
+    author="Zihan Ren",
+    author_email="zihanren.ds@gmail.com",
+    description=DESCRIPTION,
     long_description_content_type="text/markdown",
-    url='https://github.com/mike-huls/toolbox',
-    project_urls = {
-        "Bug Tracker": "https://github.com/mike-huls/toolbox/issues"
-    },
-    license='MIT'
+    long_description=long_description,
+    packages=find_packages(),
+    install_requires=[],
+    keywords=['python', 'PyTorch', 'Pore Network Model'],
+    classifiers=[
+        "Development Status :: 1 - Planning",
+        "Intended Audience :: Developers",
+        "Programming Language :: Python :: 3",
+        "Operating System :: Unix",
+        "Operating System :: MacOS :: MacOS X",
+        "Operating System :: Microsoft :: Windows",
+    ]
 )

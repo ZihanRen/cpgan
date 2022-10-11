@@ -1,0 +1,64 @@
+Running device available: NVIDIA RTX A6000
+Training begin: ...
+/journel/s0/zur74/venv/pnm-new/lib/python3.9/site-packages/torch/nn/modules/conv.py:602: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at  ../aten/src/ATen/native/Convolution.cpp:882.)
+  return F.conv3d(
+[0/30][359/360]	Loss_D: 0.6143	Loss_G: 1.4675	D(x): 1.2958	D(G(z)): -0.2170 / -0.9351
+Training time takes approximately:  22.58245030641556 minutes at current epcoh
+[1/30][359/360]	Loss_D: 0.0003	Loss_G: 8.8639	D(x): 8.5815	D(G(z)): -8.8604 / -8.8636
+Training time takes approximately:  22.10936620235443 minutes at current epcoh
+[2/30][359/360]	Loss_D: 1.4068	Loss_G: 3.8393	D(x): -2.6510	D(G(z)): -8.5849 / -3.8052
+Training time takes approximately:  22.107270832856496 minutes at current epcoh
+[3/30][359/360]	Loss_D: 0.9077	Loss_G: 1.2845	D(x): -0.6762	D(G(z)): -0.3923 / -0.6996
+Training time takes approximately:  22.117572180430095 minutes at current epcoh
+[4/30][359/360]	Loss_D: 0.0661	Loss_G: 9.7948	D(x): 7.3289	D(G(z)): -3.4276 / -9.7945
+Training time takes approximately:  22.108446447054543 minutes at current epcoh
+[5/30][359/360]	Loss_D: 0.1913	Loss_G: 3.0647	D(x): 2.4252	D(G(z)): -2.0859 / -2.9493
+Training time takes approximately:  22.111937852700553 minutes at current epcoh
+[6/30][359/360]	Loss_D: 0.7529	Loss_G: 1.1145	D(x): 0.0228	D(G(z)): -0.1467 / -0.6361
+Training time takes approximately:  22.067762982845306 minutes at current epcoh
+[7/30][359/360]	Loss_D: 0.3130	Loss_G: 1.9934	D(x): 2.7019	D(G(z)): -0.8927 / -1.7497
+Training time takes approximately:  22.09219138622284 minutes at current epcoh
+[8/30][359/360]	Loss_D: 0.4309	Loss_G: 1.9350	D(x): 0.1407	D(G(z)): -2.1094 / -1.6940
+Training time takes approximately:  22.093574253718057 minutes at current epcoh
+[9/30][359/360]	Loss_D: 0.3657	Loss_G: 1.8934	D(x): 1.2792	D(G(z)): -1.0084 / -1.6585
+Training time takes approximately:  22.09955181678136 minutes at current epcoh
+[10/30][359/360]	Loss_D: 0.4128	Loss_G: 1.8298	D(x): 2.0698	D(G(z)): -0.9962 / -1.5190
+Training time takes approximately:  22.113268037637074 minutes at current epcoh
+[11/30][359/360]	Loss_D: 0.6112	Loss_G: 1.2266	D(x): 0.2469	D(G(z)): -0.5866 / -0.7792
+Training time takes approximately:  22.263372127215067 minutes at current epcoh
+[12/30][359/360]	Loss_D: 0.2356	Loss_G: 1.7165	D(x): 2.2010	D(G(z)): -1.4927 / -1.4156
+Training time takes approximately:  22.251353232065835 minutes at current epcoh
+[13/30][359/360]	Loss_D: 0.6046	Loss_G: 1.1201	D(x): 0.0765	D(G(z)): -0.7262 / -0.5990
+Training time takes approximately:  22.235748052597046 minutes at current epcoh
+[14/30][359/360]	Loss_D: 0.7405	Loss_G: 1.3689	D(x): 0.0459	D(G(z)): -0.1446 / -1.0078
+Training time takes approximately:  22.231548114617667 minutes at current epcoh
+[15/30][359/360]	Loss_D: 0.4076	Loss_G: 1.3372	D(x): 1.8228	D(G(z)): -0.4348 / -0.9515
+Training time takes approximately:  22.24663242896398 minutes at current epcoh
+[16/30][359/360]	Loss_D: 0.3466	Loss_G: 2.0746	D(x): 2.7892	D(G(z)): -1.2063 / -1.8310
+Training time takes approximately:  22.229459130764006 minutes at current epcoh
+[17/30][359/360]	Loss_D: 0.5361	Loss_G: 1.0497	D(x): 0.9948	D(G(z)): -0.0882 / -0.5279
+Training time takes approximately:  22.224522570768993 minutes at current epcoh
+[18/30][359/360]	Loss_D: 0.5502	Loss_G: 1.4396	D(x): 0.2358	D(G(z)): -0.8623 / -1.0324
+Training time takes approximately:  22.231134299437205 minutes at current epcoh
+[19/30][359/360]	Loss_D: 0.8604	Loss_G: 1.4347	D(x): 0.4607	D(G(z)): 0.3311 / -0.9751
+Training time takes approximately:  22.221188100179038 minutes at current epcoh
+[20/30][359/360]	Loss_D: 0.6277	Loss_G: 0.8316	D(x): 0.6397	D(G(z)): -0.0173 / -0.1012
+Training time takes approximately:  22.24080046812693 minutes at current epcoh
+[21/30][359/360]	Loss_D: 0.7392	Loss_G: 0.7120	D(x): -0.2825	D(G(z)): -0.3748 / 0.0693
+Training time takes approximately:  22.28463276227315 minutes at current epcoh
+[22/30][359/360]	Loss_D: 0.5734	Loss_G: 0.8534	D(x): 0.5125	D(G(z)): -0.2274 / -0.2351
+Training time takes approximately:  22.269887479146323 minutes at current epcoh
+[23/30][359/360]	Loss_D: 0.6748	Loss_G: 0.8220	D(x): 0.1990	D(G(z)): -0.0312 / -0.1782
+Training time takes approximately:  22.17301233212153 minutes at current epcoh
+[24/30][359/360]	Loss_D: 0.7244	Loss_G: 0.6898	D(x): 0.1317	D(G(z)): 0.0791 / 0.0866
+Training time takes approximately:  22.171655686696372 minutes at current epcoh
+[25/30][359/360]	Loss_D: 0.7387	Loss_G: 0.7305	D(x): 0.1014	D(G(z)): 0.1446 / -0.0061
+Training time takes approximately:  22.164909462134045 minutes at current epcoh
+[26/30][359/360]	Loss_D: 0.5816	Loss_G: 1.0020	D(x): 0.3459	D(G(z)): -0.4145 / -0.3947
+Training time takes approximately:  22.230300800005594 minutes at current epcoh
+[27/30][359/360]	Loss_D: 0.4319	Loss_G: 1.5227	D(x): 0.8637	D(G(z)): -1.0168 / -1.1750
+Training time takes approximately:  22.19330833355586 minutes at current epcoh
+[28/30][359/360]	Loss_D: 0.8412	Loss_G: 0.9540	D(x): -0.1682	D(G(z)): 0.2016 / -0.3911
+Training time takes approximately:  22.184841219584147 minutes at current epcoh
+[29/30][359/360]	Loss_D: 0.4130	Loss_G: 1.1775	D(x): 0.5117	D(G(z)): -1.0194 / -0.7515
+Training time takes approximately:  22.18500300645828 minutes at current epcoh

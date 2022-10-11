@@ -1,6 +1,17 @@
 README.md
 setup.py
+cpgan/__init__.py
+cpgan/init_yaml.py
+cpgan/test.py
 cpgan.egg-info/PKG-INFO
 cpgan.egg-info/SOURCES.txt
 cpgan.egg-info/dependency_links.txt
 cpgan.egg-info/top_level.txt
+cpgan/eval/__init__.py
+cpgan/eval/covar.py
+cpgan/eval/eul.py
+cpgan/eval/eval-kr.py
+cpgan/eval/eval-phi.py
+cpgan/ooppnm/__init__.py
+cpgan/ooppnm/wrap_openpnm.py
+setup/__init__.py
