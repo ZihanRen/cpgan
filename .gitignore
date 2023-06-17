@@ -6,3 +6,8 @@
 *.pth
 # ignore all png files
 *.png
+*.npy
+*.out
+*.csv
+*.pkl
+*.gif
