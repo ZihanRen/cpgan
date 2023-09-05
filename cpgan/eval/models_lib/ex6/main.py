@@ -65,7 +65,6 @@ optimizerG = optim.Adam(gen.parameters(),lr=g_lr)
 # fixed noise injection - for checking image quality
 noise_fix = torch.randn(10,200).to(device)
 
-
 #%%
 # monitor the losses
 img_list = []

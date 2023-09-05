@@ -1,7 +1,5 @@
 # Path to load models library
-model_path: 
-  model_save:  "/journel/s0/zur74/cpgan/cpgan/eval/models_save"
-  model_lib:  "/journel/s0/zur74/cpgan/cpgan/eval/models_lib"
+model:  "/journel/s0/zur74/cpgan/cpgan/eval/models_lib"
 
 # PATH to load different images data
 img_path:
@@ -10,4 +8,7 @@ img_path:
   img_chunk:  "/journel/s0/zur74/data/ibm-11/Berea-sub"
 
 # PATH to load simulation results
-feature_path: "/journel/s0/zur74/cpgan/cpgan/features"
+feature_path: "/journel/s0/zur74/cpgan/cpgan/features/data"
+
+# PATH to save models history 
+trainhist_path: "/journel/s0/zur74/cpgan/cpgan/train/train_hist"

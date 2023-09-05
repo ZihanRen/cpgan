@@ -1,0 +1,1 @@
+##A failture experiment again: adding Wassertain loss + GP penalty with info loss (MSE). It sucks.

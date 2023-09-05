@@ -4,10 +4,6 @@ import numpy as np
 import openpnm as op
 import porespy as ps
 
-os.chdir('/akshat/s0/zur74/data/ibm-11')
-# PATH = os.path.join("d:\\",'data',"3d")
-# os.chdir(PATH)
-
 np.set_printoptions(precision=4)
 np.random.seed(10)
 

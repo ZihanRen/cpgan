@@ -1,3 +1,0 @@
-#%%
-from cpgan import ooppnm
-# %%

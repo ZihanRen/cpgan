@@ -1,0 +1,1 @@
+## Add dense layer instead of fully convolutional layer in front of generator
