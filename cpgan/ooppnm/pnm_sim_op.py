@@ -6,7 +6,7 @@ import random
 import pandas as pd
 
 class Pnm_sim:
-    def __init__(self,PATH=None,im=None,voxel_size=2.25e-06,inlet='left',outlet='right',img_size=128):
+    def __init__(self,PATH=None,im=None,voxel_size=2.25e-06,inlet='left',outlet='right'):
         np.random.seed(0)
         random.seed(0)
 
@@ -22,8 +22,10 @@ class Pnm_sim:
         self.voxel_size = voxel_size
         self.inlet_dir = inlet
         self.outlet_dir = outlet
-        self.img_size = img_size
-        
+
+        # get the dimension of the image
+        self.img_size = im.shape[0]
+
         # initialize OpenPNM objects
         self.pn = None
         self.air = None
