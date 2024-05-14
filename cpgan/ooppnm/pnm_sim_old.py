@@ -128,7 +128,8 @@ class Pnm_sim:
         Q_abs_water = st.rate(pores=self.pn.pores(self.outlets),mode='group')
         kabs_tmp = self.__cal_abs_perm(Q_abs_water)
         self.phys_water.regenerate_models()
-        return kabs_tmp[0]
+        self.data_tmp['kabs'] = kabs_tmp[0]
+        
 
     def kr_simulation(self):
 
@@ -187,7 +188,6 @@ class Pnm_sim:
         self.data_tmp['snw'] = np.array(snw)
         self.data_tmp['sw'] = np.array(sw)
         
-        return self.data_tmp
 
     def close_ws(self):
         self.ws.close_project(self.pn.project)
