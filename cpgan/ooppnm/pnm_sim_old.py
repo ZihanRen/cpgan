@@ -98,6 +98,12 @@ class Pnm_sim:
         self.OP_1.set_inlets(pores=self.pn.pores(self.inlets))
         self.OP_1.setup(phase=self.air, pore_volume='pore.volume', throat_volume='throat.volume')
         self.OP_1.run(points=num_points)
+        # save pc object into data_tmp
+        pc_obj = {}
+        pc_obj['pc'] = self.OP_1.get_intrusion_data().Pcap
+        pc_obj['Snwp'] = self.OP_1.get_intrusion_data().Snwp
+        self.data_tmp['pc'] = pc_obj
+
 
     def __update_phase_and_phys_air(self,results):
         val = np.amin(self.phys_water['throat.hydraulic_conductance'])/1000
