@@ -50,6 +50,9 @@ class Z_perturb:
             img = self.forward_img(z_n,self.gen)
             
             img = img_prc.clean_img(img)
+            # squeeze dimension
+            img = img[0]
+            print(img.shape)
             pred = self.func(img)
             if pred == None:
                 continue
@@ -66,5 +69,5 @@ class Z_perturb:
         if abs(err)<threshold:
             return z_n,err_list,pred,i
         else:
-            return None,None,None
+            return None,None,None,None
         

@@ -42,16 +42,6 @@ def kabs_sim(img):
     data_pnm.close_ws()
     return psd,tsd,kabs
 
-def kabs_sim(img):
-    data_pnm = pnm_sim_old.Pnm_sim(im=img)
-    data_pnm.network_extract()
-    if data_pnm.error == 1:
-        return None
-    data_pnm.init_physics()
-    kabs = data_pnm.get_absolute_perm()
-    data_pnm.close_ws()
-    return kabs, data_pnm.data_tmp
-
 def save_pickle(PATH,data):
     with open(PATH,'wb') as f:
         pickle.dump(data ,f)
@@ -82,81 +72,46 @@ fake_img = img_prc.clean_img(fake_img)
 # %% simulate kabs on real images
 
 kabs_t = []
-phi_t = []
-eul_t = []
-spec_t = []
 psd_t = []
 tsd_t = []
-coord_t = []
-covar_t = []
 
 
 for i in range(sample_num):
     img_t = np.load(os.path.join(img_path,img_name[i]))
-    kabs_tmp, df_tmp = kabs_sim(img_t)
+    psd_tmp,tsd_tmp, kabs_tmp = kabs_sim(img_t)
     if kabs_tmp == None:
         continue
-    psd_t.append(df_tmp['pore.diameter'])
-    tsd_t.append(df_tmp['throat.diameter'])
+    psd_t.append(psd_tmp)
+    tsd_t.append(tsd_tmp)
     kabs_t.append(kabs_tmp)
-    phi_t.append(img_prc.phi(img_t))
-    eul_t.append(img_prc.eul(img_t))
-    spec_t.append(img_prc.spec_suf_area(img_t))
-    coord_t.append(df_tmp['coordination'])
-    covar_t.append(img_prc.two_point_corr(img_t))
-
-save_pickle('real_covar.pkl',coord_t)
 
 # %% simulate on fake iamge
-
-
-
 # approach
 kabs_f = []
-phi_f = []
-eul_f = []
-spec_f = []
 psd_f = []
 tsd_f = []
-coord_f = []
-covar_f = []
 
 for i in range(sample_num):
     img_tmp = fake_img[i]
-    kabs_tmp, df_tmp = kabs_sim(img_tmp)
-    
+    psd_tmp,tsd_tmp, kabs_tmp = kabs_sim(img_tmp)
     if kabs_tmp == None:
         continue
-    psd_f.append(df_tmp['pore.diameter'])
-    tsd_f.append(df_tmp['throat.diameter'])
-    kabs_f.append(kabs_tmp)
-    phi_f.append(img_prc.phi(img_tmp))
-    eul_f.append(img_prc.eul(img_tmp))
-    spec_f.append(img_prc.spec_suf_area(img_tmp))
-    coord_f.append(df_tmp['coordination'])
-    covar_f.append(img_prc.two_point_corr(img_tmp))
 
-save_pickle('synthetic_covar.pkl',coord_f)
+    psd_f.append(psd_tmp)
+    tsd_f.append(tsd_tmp)
+    kabs_f.append(kabs_tmp)
 # %% save data to csv
 df_fake = {
     'kabs':kabs_f,
-    'phi':phi_f,
-    'eul':eul_f,
-    'spec_area':spec_f,
     'psd':psd_f,
-    'tsd':tsd_f,
-    'coord':coord_f
+    'tsd':tsd_f
     }
 
 df_real = {
     'name':df_subset['name'].to_list(),
     'kabs':kabs_t,
-    'phi':phi_t,
-    'eul':eul_t,
-    'spec_area':spec_t,
     'psd':psd_t,
-    'tsd':tsd_t,
-    'coord':coord_f
+    'tsd':tsd_t
     }
 
 # %%
